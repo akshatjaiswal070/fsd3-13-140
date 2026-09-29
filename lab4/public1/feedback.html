@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightPath Tuition Classes</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#172033;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.navbar{background:#172554;color:white;display:flex;justify-content:space-between;align-items:center;padding:16px 7%;position:sticky;top:0;z-index:10}
+.logo{font-size:22px;font-weight:800}.nav-links{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+.nav-links a{font-size:14px;color:#e0e7ff}.nav-links a:hover,.nav-links .active{color:#60a5fa}
+.hero{padding:70px 7%;background:linear-gradient(135deg,#172554,#2563eb);color:white}
+.hero h1{font-size:42px;margin-bottom:12px}.hero p{max-width:700px;color:#dbeafe}
+.container{max-width:1100px;margin:0 auto;padding:45px 7%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card,.form-card{background:white;padding:25px;border-radius:16px;box-shadow:0 8px 25px rgba(15,23,42,.08)}
+.card h3{margin-bottom:8px;color:#1d4ed8}.form-card{max-width:650px;margin:0 auto}
+label{display:block;font-weight:700;margin:15px 0 6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:9px;font-size:15px}
+textarea{min-height:130px;resize:vertical}.btn{display:inline-block;background:#2563eb;color:white;border:0;padding:12px 22px;border-radius:9px;cursor:pointer;font-weight:700;margin-top:18px}
+.btn:hover{background:#1d4ed8}.price{font-size:30px;font-weight:800;color:#2563eb;margin:12px 0}
+.badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:700}
+footer{background:#0f172a;color:#cbd5e1;padding:35px 7%;margin-top:35px}
+.footer-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer h3{color:white;margin-bottom:10px}footer ul{list-style:none}footer li{margin:7px 0}
+.social{display:flex;gap:14px;margin-top:12px}.social a{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#1e293b;color:white;font-size:18px}
+.social a:hover{background:#2563eb}.small{text-align:center;margin-top:25px;padding-top:20px;border-top:1px solid #334155;font-size:13px}
+.center{text-align:center}@media(max-width:750px){.navbar{align-items:flex-start;gap:15px;flex-direction:column}.nav-links{gap:10px}.hero h1{font-size:32px}.footer-grid{grid-template-columns:1fr}}
+</style></head><body>
+<nav class="navbar"><a class="logo" href="courses.html">BrightPath Tuition</a><ul class="nav-links"><li><a class="" href="registration.html">Registration</a></li><li><a class="" href="login.html">Login</a></li><li><a class="" href="courses.html">Courses</a></li><li><a class="active" href="feedback.html">Feedback</a></li><li><a class="" href="prizes.html">Prize Details</a></li></ul></nav>
+<main><section class="hero"><h1>Student Feedback</h1><p>Your feedback helps us improve our classes and teaching experience.</p></section>
+<div class="container"><div class="form-card"><h2>Share Your Feedback</h2><form onsubmit="event.preventDefault();alert('Thank you for your feedback!');">
+<label>Your Name</label><input required placeholder="Enter your name">
+<label>Course</label><select required><option value="">Select course</option><option>Mathematics</option><option>Science</option><option>English</option><option>Complete Academic Package</option></select>
+<label>Rating</label><select required><option value="">Select rating</option><option>5 - Excellent</option><option>4 - Very Good</option><option>3 - Good</option><option>2 - Needs Improvement</option><option>1 - Poor</option></select>
+<label>Your Feedback</label><textarea required placeholder="Tell us about your experience..."></textarea>
+<button class="btn" type="submit">Submit Feedback</button></form></div></div></main>
+<footer><div class="footer-grid">
+<div><h3>BrightPath Tuition Classes</h3><p>Learn better. Practice smarter. Achieve more.</p>
+<div class="social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a><a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+<div><h3>Quick Links</h3><ul><li><a class="" href="registration.html">Registration</a></li><li><a class="" href="login.html">Login</a></li><li><a class="" href="courses.html">Courses</a></li><li><a class="active" href="feedback.html">Feedback</a></li><li><a class="" href="prizes.html">Prize Details</a></li></ul></div>
+<div><h3>Contact</h3><p>📍 Your City, India</p><p>📞 +91 98765 43210</p><p>✉️ info@brightpathtuition.com</p></div>
+</div><div class="small">© 2026 BrightPath Tuition Classes. All Rights Reserved.</div></footer>
+</body></html>
