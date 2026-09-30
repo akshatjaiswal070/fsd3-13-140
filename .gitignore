@@ -1,2 +1,6 @@
 lab3/node_modules/
-lab4/node_modules/
+lab4/node_modules/ 
+node_modules/
+.DS_Store
+dist/
+build/
