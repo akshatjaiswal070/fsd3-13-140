@@ -77,6 +77,37 @@ app.get("/api/products/query", (req, res) => {
 });
 
 
+// Get review by product ID and review ID
+app.get("/api/products/:id/review/:revid", (req, res) => {
+
+    const { id, revid } = req.params;
+
+    const product = products.find(
+        (item) => item.id == Number(id)
+    );
+
+    if (!product) {
+        res.send(`Product not found with id ${id}`);
+        return;
+    }
+
+    const review = product.reviews.find(
+        (item) => item.id == Number(revid)
+    );
+
+    if (!review) {
+        res.send(`Review not found with id ${revid}`);
+        return;
+    }
+
+    res.status(200).json({
+        productId: id,
+        reviewId: revid,
+        data: review
+    });
+});
+
+
 // Get product by ID
 app.get("/api/products/:id", (req, res) => {
 
@@ -111,5 +142,5 @@ app.use((req, res) => {
 
 // Start Server
 app.listen(3333, () => {
-    console.log("prg4 is running... http://localhost:3333");
+    console.log("prg4 is running...");
 });
